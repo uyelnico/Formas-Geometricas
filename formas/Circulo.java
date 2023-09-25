@@ -13,7 +13,7 @@ public class Circulo {
 
         funcion.DibujarCirculo(radio, AMARILLO);
 
-        System.out.println("Un Cuadrado de radio: " + radio);
+        System.out.println("Un Circulo de radio: " + radio);
 
         leer.close();
     }
