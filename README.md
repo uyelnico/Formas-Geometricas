@@ -183,6 +183,14 @@ public class funcion {
 }
 ```
 
+### formas
+
+En este `package` es en donde se ejecutaran las formas geometricas dentro de la carpeta.
+
+![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/b37fc551-1d69-4774-bba0-784ca23531ae)
+
+
+
 Proximamente la explicación, pero antes... los códigos estan dentro del proyecto, por si gustan ver.
 
 `Author: Nicolay_Chiazzaro`
