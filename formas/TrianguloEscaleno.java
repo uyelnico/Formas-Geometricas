@@ -1,9 +1,7 @@
 package formas;
 
 import static funcionamiento.colores.*;
-
 import java.util.Scanner;
-
 import funcionamiento.funcion;
 
 public class TrianguloEscaleno {
@@ -20,3 +18,8 @@ public class TrianguloEscaleno {
         leer.close();
     }
 }
+
+/**
+ * @author Nicolay Chiazzaro
+ *
+ */
