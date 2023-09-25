@@ -11,6 +11,8 @@ Hola! Lo que va el proyecto de **Formas-Geometricas** es que, compartiré como h
 ![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/8418f944-4327-4ff4-ac8e-62c00a49efa4)
 ![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/8e733a9d-2fe2-4aac-a014-1e7bd49e7651)
 
+![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/85a75fb9-9cdc-4666-9e0f-b1d3f6419410)
+
 ## Packages
 
 ```java
