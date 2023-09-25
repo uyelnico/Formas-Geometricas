@@ -11,7 +11,14 @@ Hola! Lo que va el proyecto de **Formas-Geometricas** es que, compartiré como h
 ![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/8418f944-4327-4ff4-ac8e-62c00a49efa4)
 ![image](https://github.com/uyelnico/Formas-Geometricas/assets/145890121/8e733a9d-2fe2-4aac-a014-1e7bd49e7651)
 
-## import
+## Packages
+
+```java
+package funcionamiento; // Carpeta en donde esta para que funcione el código (para el inicio de código, color de las formas, etc)
+package formas; // Carpeta de las formas por clase (Tamaño, Dibujarlo, Radio, etc)
+```
+
+## Import
 
 **Dentro del package Funcionamiento**
 ```java
@@ -27,13 +34,6 @@ package formas; //
 import static funcionamiento.colores.*; // Llamamos la carpeta de funcionamiento para que pueda establecer los colores de la forma
 import java.util.Scanner; // Scanner para que puedas escribir lo que te pide el código (tamaño, alto, ancho, radio, etc) dependiendo de la forma elegida
 import funcionamiento.funcion; // LLamamos la carpeta de funcionamiento para que pueda ejecutarse cada forma
-```
-
-## packages
-
-```java
-package funcionamiento; // Carpeta en donde esta para que funcione el código (para el inicio de código, color de las formas, etc)
-package formas; // Carpeta de las formas por clase (Tamaño, Dibujarlo, Radio, etc)
 ```
 
 ### funcionamiento
