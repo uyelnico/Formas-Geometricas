@@ -58,7 +58,7 @@ public class funcion {
         return ancho;
     }
  
-    public static void DibujarRectangulo(int alto, int ancho, String color) {
+    public static void DibujarRectangulo(double alto, double ancho, String color) {
         for (int x = 1; x <= alto; ++x) {
             for (int y = 1; y <= ancho; ++y) {
                 System.out.print(color + "  " + color + RESET);
