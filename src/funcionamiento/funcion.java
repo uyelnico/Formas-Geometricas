@@ -19,9 +19,9 @@ public class funcion {
         } while (num <= 0);
         return num;
     }
-    public static void DibujarCuadrado(int num, String color) {
-        for (int x = 1; x <= num; ++x) {
-            for (int y = 1; y <= num; ++y) {
+    public static void DibujarCuadrado(double tamaño, String color) {
+        for (int x = 1; x <= tamaño; ++x) {
+            for (int y = 1; y <= tamaño; ++y) {
                 System.out.print(color + "  " + color + RESET);
             }
             System.out.println();
