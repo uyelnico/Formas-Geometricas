@@ -19,6 +19,22 @@ public class funcion {
         } while (num <= 0);
         return num;
     }
+    // Tamaño, Area, Perimetro y Diagonal del Cuadrado
+    
+    public static void DatosCuadrado(double tamaño, double area, double perimetro, double diagonal) {
+        
+        String tamañoDefinitivo = (tamaño % 1 == 0) ? String.valueOf((int) tamaño) : String.valueOf(tamaño);
+        String areaDefinitiva = (area % 1 == 0) ? String.valueOf((int) area) : String.valueOf(area);
+        String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
+        String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
+        
+        System.out.println("Un Cuadrado de tamaño: " + tamañoDefinitivo);
+        System.out.println("Con un area de: " + areaDefinitiva);
+        System.out.println("Con un perimetro de: " + perimetroDefinitivo);
+        System.out.println("Con una diagonal de: " + diagonalDefinitiva);
+
+    }
+    
     public static void DibujarCuadrado(double tamaño, String color) {
         for (int x = 1; x <= tamaño; ++x) {
             for (int y = 1; y <= tamaño; ++y) {
@@ -57,6 +73,22 @@ public class funcion {
         } while (ancho <= 0);
         return ancho;
     }
+    
+    // Tamaño, Area, Perimetro y Diagonal del Rectangulo
+    
+    public static void DatosRectangulo(double tamaño, double area, double perimetro, double diagonal) {
+        
+        String tamañoDefinitivo = (tamaño % 1 == 0) ? String.valueOf((int) tamaño) : String.valueOf(tamaño);
+        String areaDefinitiva = (area % 1 == 0) ? String.valueOf((int) area) : String.valueOf(area);
+        String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
+        String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
+        
+        System.out.println("Un Cuadrado de tamaño: " + tamañoDefinitivo);
+        System.out.println("Con un area de: " + areaDefinitiva);
+        System.out.println("Con un perimetro de: " + perimetroDefinitivo);
+        System.out.println("Con una diagonal de: " + diagonalDefinitiva);
+
+    }
  
     public static void DibujarRectangulo(double alto, double ancho, String color) {
         for (int x = 1; x <= alto; ++x) {
@@ -65,8 +97,7 @@ public class funcion {
             }
             System.out.println();
         }
-    }
-    
+    } 
     
 // Triangulo Escaleno
     
