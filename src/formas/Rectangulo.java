@@ -29,7 +29,6 @@ public class Rectangulo {
         System.out.println("Con una diagonal de: " + diagonalDefinitiva);
         
         
-        
         leer.close();
     }
 }

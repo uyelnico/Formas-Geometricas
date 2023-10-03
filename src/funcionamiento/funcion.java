@@ -7,15 +7,15 @@ import java.util.Scanner;
 public class funcion {
 
 // Cuadrado
-    public static int TamañoCuadrado(Scanner leer) {
-    	int num;
+    public static double TamañoCuadrado(Scanner leer) {
+    	double num;
         do {
             System.out.print("Ingrese el tamaño (número positivo) para el Cuadrado: ");
-            while (!leer.hasNextInt()) {
+            while (!leer.hasNextDouble()) {
                 System.out.print("Ingrese un valor numérico válido: ");
                 leer.next();
             }
-            num = leer.nextInt();
+            num = leer.nextDouble();
         } while (num <= 0);
         return num;
     }
@@ -31,29 +31,29 @@ public class funcion {
 // Rectangulo
     
     //Altura
-    public static int AltoRectangulo(Scanner leer) {
-    	int alto;
+    public static double AltoRectangulo(Scanner leer) {
+    	double alto;
         do {
             System.out.print("Ingrese el alto (número positivo) para el Rectangulo: ");
-            while (!leer.hasNextInt()) {
+            while (!leer.hasNextDouble()) {
                 System.out.print("Ingrese un valor numérico válido: ");
                 leer.next();
             }
-            alto = leer.nextInt();
+            alto = leer.nextDouble();
         } while (alto <= 0);
         return alto;
     }
     
    // Ancho 
-    public static int AnchoaRectangulo(Scanner leer) {
-    	int ancho;
+    public static double AnchoaRectangulo(Scanner leer) {
+    	double ancho;
         do {
             System.out.print("Ingrese el ancho (número positivo) para el Rectangulo: ");
-            while (!leer.hasNextInt()) {
+            while (!leer.hasNextDouble()) {
                 System.out.print("Ingrese un valor numérico válido: ");
                 leer.next();
             }
-            ancho = leer.nextInt();
+            ancho = leer.nextDouble();
         } while (ancho <= 0);
         return ancho;
     }
