@@ -9,11 +9,13 @@ public class Circulo {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
 
-        int radio = funcion.RadioCirculo(leer);
-
+        double radio = funcion.RadioCirculo(leer);
+        double area = Math.PI * Math.pow(radio, 2);
+        double perimetro = Math.PI * radio;
+        double diagonal = 2 * radio;
+        
+        funcion.DatosCirculo(radio, area, perimetro, diagonal);
         funcion.DibujarCirculo(radio, AMARILLO);
-
-        System.out.println("Un Circulo de radio: " + radio);
 
         leer.close();
     }

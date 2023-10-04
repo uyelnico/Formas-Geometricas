@@ -10,8 +10,8 @@ public class Rectangulo {
 
         double alto = funcion.AltoRectangulo(leer);
         double ancho = funcion.AnchoaRectangulo(leer);
-        double area = alto*ancho;
-        double perimetro = 2*(alto + ancho);
+        double area = alto * ancho;
+        double perimetro = 2* (alto + ancho);
         double diagonal = Math.sqrt(Math.pow(alto, 2) + Math.pow(ancho, 2));
         
        funcion.DatosRectangulo(ancho, area, perimetro, diagonal);

@@ -83,7 +83,7 @@ public class funcion {
         String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
         String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
         
-        System.out.println("Un Cuadrado de tamaño: " + tamañoDefinitivo);
+        System.out.println("Un Rectangulo de tamaño: " + tamañoDefinitivo);
         System.out.println("Con un area de: " + areaDefinitiva);
         System.out.println("Con un perimetro de: " + perimetroDefinitivo);
         System.out.println("Con una diagonal de: " + diagonalDefinitiva);
@@ -101,20 +101,36 @@ public class funcion {
     
 // Triangulo Escaleno
     
-    public static int TamañoTrianguloEscaleno(Scanner leer) {
-    	int num;
+    public static double TamañoTrianguloEscaleno(Scanner leer) {
+    	double num;
         do {
             System.out.print("Ingrese el tamaño (número positivo) para el Triángulo Escaleno: ");
-            while (!leer.hasNextInt()) {
+            while (!leer.hasNextDouble()) {
                 System.out.print("Ingrese un valor numérico válido: ");
                 leer.next();
             }
-            num = leer.nextInt();
+            num = leer.nextDouble();
         } while (num <= 0);
         return num;
     }
-    public static void DibujarTrianguloEscaleno(int num, String color) {
-        for (int x = 1; x <= num; ++x) {
+    
+    // Tamaño, Area, Perimetro y Diagonal del Triangulo Escaleno
+    public static void DatosTrianguloEscaleno(double tamaño, double area, double perimetro, double diagonal) {
+    	
+        String tamañoDefinitivo = (tamaño % 1 == 0) ? String.valueOf((int) tamaño) : String.valueOf(tamaño);
+        String areaDefinitiva = (area % 1 == 0) ? String.valueOf((int) area) : String.valueOf(area);
+        String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
+        String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
+        
+        System.out.println("Un Triangulo Escaleno de tamaño: " + tamañoDefinitivo);
+        System.out.println("Con un area de: " + areaDefinitiva);
+        System.out.println("Con un perimetro de: " + perimetroDefinitivo);
+        System.out.println("Con una diagonal de: " + diagonalDefinitiva);
+    	
+    }
+    
+    public static void DibujarTrianguloEscaleno(double tamaño, String color) {
+        for (int x = 1; x <= tamaño; ++x) {
             for (int y = 1; y <= x; ++y) {
                 System.out.print(color + " " + color + RESET);
             }
@@ -125,22 +141,37 @@ public class funcion {
 
 // Circulo
     
-    public static int RadioCirculo(Scanner leer) {
-    	int radio;
+    public static double RadioCirculo(Scanner leer) {
+    	double radio;
         do {
             System.out.print("Ingrese el radio (número positivo) para el Circulo: ");
-            while (!leer.hasNextInt()) {
+            while (!leer.hasNextDouble()) {
                 System.out.print("Ingrese un valor numérico válido: ");
                 leer.next();
             }
-            radio = leer.nextInt();
+            radio = leer.nextDouble();
         } while (radio <= 0);
         return radio;
     
 }  
-    public static void DibujarCirculo(int radio, String color) {
-        for (int y = -radio; y <= radio; y++) {
-            for (int x = -radio; x <= radio; x++) {
+    
+    public static void DatosCirculo(double radio, double area, double perimetro, double diagonal) {
+    	
+        String radioDefinitivo = (radio % 1 == 0) ? String.valueOf((int) radio) : String.valueOf(radio);
+        String areaDefinitiva = (area % 1 == 0) ? String.valueOf((int) area) : String.valueOf(area);
+        String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
+        String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
+        
+        System.out.println("Un Circulo de radio: " + radioDefinitivo);
+        System.out.println("Con un area de: " + areaDefinitiva);
+        System.out.println("Con un perimetro de: " + perimetroDefinitivo);
+        System.out.println("Con una diagonal de: " + diagonalDefinitiva);
+    	
+    }
+    
+    public static void DibujarCirculo(double radio, String color) {
+        for (double y = -radio; y <= radio; y++) {
+            for (double x = -radio; x <= radio; x++) {
                 if (x * x + y * y <= radio * radio) {
                     System.out.print(color + "  " + color);
                 } else {

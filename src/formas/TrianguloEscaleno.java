@@ -9,11 +9,14 @@ public class TrianguloEscaleno {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
 
-        int num = funcion.TamañoTrianguloEscaleno(leer);
+        double tamaño = funcion.TamañoTrianguloEscaleno(leer);
+        double area = (Math.sqrt(3) / 4) * Math.pow(tamaño, 2);
+        double perimetro = 3 * tamaño;
+        double diagonal = tamaño * Math.sqrt(2);
+        
+        funcion.DatosTrianguloEscaleno(tamaño, area, perimetro, diagonal);
+       funcion.DibujarTrianguloEscaleno(tamaño, VERDE);
 
-       funcion.DibujarTrianguloEscaleno(num, VERDE);
-
-        System.out.println("Un Triángulo Escaleno de tamaño: " + num);
 
         leer.close();
     }
