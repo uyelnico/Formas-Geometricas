@@ -46,7 +46,7 @@ En este `package`, es en donde creamos para el funcionamiento por clases publica
 
 ## colores.java
 
-En este caso, usamos **ASCII** para poner los colores, que en este caso son **background**, tienen la pagina web para que vean y eligan a su gusto [ascii-code.com](https://www.ascii-code.com/html-color-names). Hice esto para que las formas geometricas se vean mas esteticas y bien formadas.
+En este caso, usamos **ASCII** para poner los colores, que en este caso son **background**, tienen la pagina web para que vean y eligan a su gusto [w3schools.blog/ansi-colors-java](https://www.w3schools.blog/ansi-colors-java). Hice esto para que las formas geometricas se vean mas esteticas y bien formadas.
 
 ```java
 public class colores {
