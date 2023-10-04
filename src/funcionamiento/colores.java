@@ -8,7 +8,7 @@ public class colores {
     public static final String VERDE = "\033[0;102m";
     public static final String AMARILLO = "\033[0;103m";
     public static final String AZUL = "\033[0;104m";
-	
+    public static final String VIOLETA = "\033[45m";
 }
 
 /**
