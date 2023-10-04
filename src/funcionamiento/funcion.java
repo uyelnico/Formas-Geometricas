@@ -77,14 +77,16 @@ public class funcion {
     }
     
     // Tamaño, Area, Perimetro y Diagonal del Rectangulo
-    public static void DatosRectangulo(double tamaño, double area, double perimetro, double diagonal) {
+    public static void DatosRectangulo(double alto, double ancho, double area, double perimetro, double diagonal) {
         
-        String tamañoDefinitivo = (tamaño % 1 == 0) ? String.valueOf((int) tamaño) : String.valueOf(tamaño);
+        String altoDefinitivo = (alto % 1 == 0) ? String.valueOf((int) alto) : String.valueOf(alto);
+        String anchoDefinitivo = (ancho % 1 == 0) ? String.valueOf((int) ancho) : String.valueOf(ancho);
         String areaDefinitiva = (area % 1 == 0) ? String.valueOf((int) area) : String.valueOf(area);
         String perimetroDefinitivo = (perimetro % 1 == 0) ? String.valueOf((int) perimetro) : String.valueOf(perimetro);
         String diagonalDefinitiva = (diagonal % 1 == 0) ? String.valueOf((int) diagonal) : String.valueOf(diagonal);
         
-        System.out.println("Un Rectangulo de tamaño: " + tamañoDefinitivo);
+        System.out.println("El alto es de: " + altoDefinitivo);
+        System.out.println("El ancho es de: " + anchoDefinitivo);
         System.out.println("Con un area de: " + areaDefinitiva);
         System.out.println("Con un perimetro de: " + perimetroDefinitivo);
         System.out.println("Con una diagonal de: " + diagonalDefinitiva);
@@ -216,8 +218,8 @@ public class funcion {
   
     // Dibujar/Imprimir el Circulo
     public static void DibujarCirculo(double radio, String color) {
-        for (double y = -radio; y <= radio; y++) {
-            for (double x = -radio; x <= radio; x++) {
+        for (double y = --radio; y <= radio; y++) {
+            for (double x = --radio; x <= radio; x++) {
                 if (x * x + y * y <= radio * radio) {
                     System.out.print(color + "  " + color);
                 } else {

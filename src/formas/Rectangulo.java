@@ -14,7 +14,7 @@ public class Rectangulo {
         double perimetro = 2* (alto + ancho);
         double diagonal = Math.sqrt(Math.pow(alto, 2) + Math.pow(ancho, 2));
         
-       funcion.DatosRectangulo(ancho, area, perimetro, diagonal);
+       funcion.DatosRectangulo(alto ,ancho, area, perimetro, diagonal);
        funcion.DibujarRectangulo(alto, ancho, AZUL);
         
         
